@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F23E990727FD7BAC009E28C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E990627FD7BAC009E28C5 /* AppDelegate.m */; };
+		F23E990D27FD7BAC009E28C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E990C27FD7BAC009E28C5 /* ViewController.m */; };
+		F23E991227FD7BAF009E28C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23E991127FD7BAF009E28C5 /* Assets.xcassets */; };
+		F23E991527FD7BAF009E28C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23E991327FD7BAF009E28C5 /* LaunchScreen.storyboard */; };
+		F23E991827FD7BAF009E28C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E991727FD7BAF009E28C5 /* main.m */; };
+		F23E992427FD80A7009E28C5 /* JYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E991E27FD80A7009E28C5 /* JYTextView.m */; };
+		F23E992527FD80A7009E28C5 /* JYBubbleButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E992227FD80A7009E28C5 /* JYBubbleButtonModel.m */; };
+		F23E992627FD80A7009E28C5 /* JYBubbleMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F23E992327FD80A7009E28C5 /* JYBubbleMenuView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F23E990227FD7BAC009E28C5 /* WechatSimilarBubbleMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatSimilarBubbleMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23E990527FD7BAC009E28C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F23E990627FD7BAC009E28C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F23E990B27FD7BAC009E28C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F23E990C27FD7BAC009E28C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F23E991127FD7BAF009E28C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F23E991427FD7BAF009E28C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F23E991627FD7BAF009E28C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23E991727FD7BAF009E28C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F23E991E27FD80A7009E28C5 /* JYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYTextView.m; sourceTree = "<group>"; };
+		F23E991F27FD80A7009E28C5 /* JYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYTextView.h; sourceTree = "<group>"; };
+		F23E992027FD80A7009E28C5 /* JYBubbleButtonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBubbleButtonModel.h; sourceTree = "<group>"; };
+		F23E992127FD80A7009E28C5 /* JYBubbleMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYBubbleMenuView.h; sourceTree = "<group>"; };
+		F23E992227FD80A7009E28C5 /* JYBubbleButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBubbleButtonModel.m; sourceTree = "<group>"; };
+		F23E992327FD80A7009E28C5 /* JYBubbleMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYBubbleMenuView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F23E98FF27FD7BAC009E28C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F23E98F927FD7BAC009E28C5 = {
+			isa = PBXGroup;
+			children = (
+				F23E990427FD7BAC009E28C5 /* WechatSimilarBubbleMenu */,
+				F23E990327FD7BAC009E28C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F23E990327FD7BAC009E28C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F23E990227FD7BAC009E28C5 /* WechatSimilarBubbleMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F23E990427FD7BAC009E28C5 /* WechatSimilarBubbleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F23E990527FD7BAC009E28C5 /* AppDelegate.h */,
+				F23E990627FD7BAC009E28C5 /* AppDelegate.m */,
+				F23E990B27FD7BAC009E28C5 /* ViewController.h */,
+				F23E990C27FD7BAC009E28C5 /* ViewController.m */,
+				F23E992027FD80A7009E28C5 /* JYBubbleButtonModel.h */,
+				F23E992227FD80A7009E28C5 /* JYBubbleButtonModel.m */,
+				F23E992127FD80A7009E28C5 /* JYBubbleMenuView.h */,
+				F23E992327FD80A7009E28C5 /* JYBubbleMenuView.m */,
+				F23E991F27FD80A7009E28C5 /* JYTextView.h */,
+				F23E991E27FD80A7009E28C5 /* JYTextView.m */,
+				F23E991127FD7BAF009E28C5 /* Assets.xcassets */,
+				F23E991327FD7BAF009E28C5 /* LaunchScreen.storyboard */,
+				F23E991627FD7BAF009E28C5 /* Info.plist */,
+				F23E991727FD7BAF009E28C5 /* main.m */,
+			);
+			path = WechatSimilarBubbleMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F23E990127FD7BAC009E28C5 /* WechatSimilarBubbleMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23E991B27FD7BAF009E28C5 /* Build configuration list for PBXNativeTarget "WechatSimilarBubbleMenu" */;
+			buildPhases = (
+				F23E98FE27FD7BAC009E28C5 /* Sources */,
+				F23E98FF27FD7BAC009E28C5 /* Frameworks */,
+				F23E990027FD7BAC009E28C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WechatSimilarBubbleMenu;
+			productName = WechatSimilarBubbleMenu;
+			productReference = F23E990227FD7BAC009E28C5 /* WechatSimilarBubbleMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F23E98FA27FD7BAC009E28C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F23E990127FD7BAC009E28C5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = F23E98FD27FD7BAC009E28C5 /* Build configuration list for PBXProject "WechatSimilarBubbleMenu" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F23E98F927FD7BAC009E28C5;
+			productRefGroup = F23E990327FD7BAC009E28C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F23E990127FD7BAC009E28C5 /* WechatSimilarBubbleMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F23E990027FD7BAC009E28C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23E991527FD7BAF009E28C5 /* LaunchScreen.storyboard in Resources */,
+				F23E991227FD7BAF009E28C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F23E98FE27FD7BAC009E28C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23E990D27FD7BAC009E28C5 /* ViewController.m in Sources */,
+				F23E990727FD7BAC009E28C5 /* AppDelegate.m in Sources */,
+				F23E992527FD80A7009E28C5 /* JYBubbleButtonModel.m in Sources */,
+				F23E992427FD80A7009E28C5 /* JYTextView.m in Sources */,
+				F23E991827FD7BAF009E28C5 /* main.m in Sources */,
+				F23E992627FD80A7009E28C5 /* JYBubbleMenuView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F23E991327FD7BAF009E28C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F23E991427FD7BAF009E28C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F23E991927FD7BAF009E28C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F23E991A27FD7BAF009E28C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F23E991C27FD7BAF009E28C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN75MKGNRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WechatSimilarBubbleMenu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudcreate.governmentToEnterprise2.WechatSimilarBubbleMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F23E991D27FD7BAF009E28C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KN75MKGNRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WechatSimilarBubbleMenu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cloudcreate.governmentToEnterprise2.WechatSimilarBubbleMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F23E98FD27FD7BAC009E28C5 /* Build configuration list for PBXProject "WechatSimilarBubbleMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23E991927FD7BAF009E28C5 /* Debug */,
+				F23E991A27FD7BAF009E28C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23E991B27FD7BAF009E28C5 /* Build configuration list for PBXNativeTarget "WechatSimilarBubbleMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F23E991C27FD7BAF009E28C5 /* Debug */,
+				F23E991D27FD7BAF009E28C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F23E98FA27FD7BAC009E28C5 /* Project object */;
+}

@@ -81,6 +81,11 @@
     NSLog(@"选择区域 _end_ 变化。。。显示");
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.serviceContentTextView hideTextSelection];
+    [JYBubbleMenuView.shareMenuView removeFromSuperview];
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if ([scrollView isKindOfClass:[UITextView class]]) {
         [JYBubbleMenuView.shareMenuView removeFromSuperview];

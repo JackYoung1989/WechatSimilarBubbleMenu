@@ -248,7 +248,7 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
 - (void)onButtonTouched:(UIButton *)button {
     if (_myNewContentArray.count > button.tag - 100) {
         JYBubbleButtonModel *model = (JYBubbleButtonModel *)_myNewContentArray[button.tag - 100];
-        NSLog(@"%@",model.name);
+        NSLog(@"点击了%@",model.name);
         if (self.selectBlock != nil) {
             self.selectBlock(model.name);
         }

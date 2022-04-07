@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JYTextView : UITextView
 
+@property (nonatomic, copy)void (^selectBlock)(NSString *selectedButtonTitle);
+
 //取消文本选中效果
 - (void)hideTextSelection;
 

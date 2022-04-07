@@ -14,4 +14,4 @@ iOS仿微信聊天页面长按气泡弹窗，wechat similar bubble menu
 
 ![效果](https://img-blog.csdnimg.cn/6cbebc191ebe406d9d12bfcdcec5d63b.gif)
 
-<iframe height=222 width=480 src="https://img-blog.csdnimg.cn/6cbebc191ebe406d9d12bfcdcec5d63b.gif">
+

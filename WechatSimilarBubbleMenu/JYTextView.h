@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JYTextView : UITextView
 
+//取消文本选中效果
+- (void)hideTextSelection;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -16,8 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 //type：类型  selectionTextRectInWindow：选中文本在window坐标系中的frame
 //cursorStartRect:start的光标位置
+//block是选择功能按钮的title
 - (void)showViewWithButtonModels:(NSArray *)array
-                 cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect;
+                 cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(NSString *selectTitle))block;
 
 @end
 

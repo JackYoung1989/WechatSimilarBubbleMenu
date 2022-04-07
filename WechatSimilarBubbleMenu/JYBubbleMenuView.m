@@ -37,6 +37,9 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
 @property (nonatomic, assign)JYBubbleMenuViewDirectionPriorityType directionPriority;
 
 @property (nonatomic, strong)NSMutableArray *oldContentArray;
+@property (nonatomic, strong)NSArray *myNewContentArray;
+
+@property (nonatomic, copy)void (^selectBlock)(NSString *selectedButtonTitle);
 
 @end
 
@@ -83,7 +86,8 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
 }
 
 - (void)showViewWithButtonModels:(NSArray *)array
-                 cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect {
+                 cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(NSString *selectTitle))block {
+    _selectBlock = block;
     ([UIApplication sharedApplication].delegate).window.backgroundColor = UIColor.redColor;
     if (self.superview == nil) {
         [([UIApplication sharedApplication].delegate).window addSubview:self];
@@ -198,6 +202,7 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
     } else {
         return _buttonsBgView;
     }
+    _myNewContentArray = array;
     
     CGFloat topMargin = 14;//button距离上、下面的间距
     CGFloat rightMargin = 9;//button距离左、右面的间距
@@ -216,6 +221,8 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
         CGFloat x = rightMargin + i % countInOneLine * buttonWidth;
         CGFloat y = topMargin + i / countInOneLine * (buttonHeight + topMargin * 2);
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, y, buttonWidth, buttonHeight)];
+        button.tag = 100 + i;
+        [button addTarget:self action:@selector(onButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
         
         JYBubbleButtonModel *model = array[i];
         
@@ -236,6 +243,16 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
     }
     
     return _buttonsBgView;
+}
+
+- (void)onButtonTouched:(UIButton *)button {
+    if (_myNewContentArray.count > button.tag - 100) {
+        JYBubbleButtonModel *model = (JYBubbleButtonModel *)_myNewContentArray[button.tag - 100];
+        NSLog(@"%@",model.name);
+        if (self.selectBlock != nil) {
+            self.selectBlock(model.name);
+        }
+    }
 }
 
 //判断button的信息内容是不是修改了，true：改动了，   false：内容没有变

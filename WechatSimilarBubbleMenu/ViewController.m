@@ -34,7 +34,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:236 / 255.0 green:237 / 255.0 blue:238 / 255.0 alpha:1];
     
     UIImageView *headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 100, 40, 40)];
-    headImageView.image = [UIImage imageNamed:@"collect"];
+    headImageView.image = [UIImage imageNamed:@"headImage"];
     headImageView.layer.cornerRadius = 5;
     headImageView.clipsToBounds = true;
     [self.view addSubview:headImageView];
@@ -50,9 +50,6 @@
     _serviceContentTextView.editable = false;
     _serviceContentTextView.delegate = self;
     _serviceContentTextView.inputDelegate = self;
-    [_serviceContentTextView resignFirstResponder];
-    _serviceContentTextView.tintColor = [UIColor greenColor];
-    _serviceContentTextView.font = [UIFont systemFontOfSize:15];
     _serviceContentTextView.text = @"If this demo helps you,please give me a buling buling star,thanks!!! \n\nJackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy!";
     [self.view addSubview:_serviceContentTextView];
     
@@ -146,7 +143,11 @@
                 [array addObject:model];
             }
             
-            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:startRect selectionTextRectInWindow:tempRect];
+            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:startRect selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
+                [self.serviceContentTextView hideTextSelection];
+                [JYBubbleMenuView.shareMenuView removeFromSuperview];
+                [self alertWithTitle:selectTitle];
+            }];
         } else {
             
             for (int i = 0; i < 4; i ++) {
@@ -168,12 +169,31 @@
                 
                 [array addObject:model];
             }
-            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:startRect selectionTextRectInWindow:tempRect];
+            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:startRect selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
+                [self.serviceContentTextView hideTextSelection];
+                [JYBubbleMenuView.shareMenuView removeFromSuperview];
+                [self alertWithTitle:selectTitle];
+            }];
         }
     } else {
         //隐藏
         [[JYBubbleMenuView shareMenuView] removeFromSuperview];
     }
+}
+
+- (void)alertWithTitle:(NSString *)title {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提醒" message:title preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAlert = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *cancelAlert = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertController addAction:okAlert];
+    [alertController addAction:cancelAlert];
+    [self presentViewController:alertController animated:true completion:^{
+            
+    }];
 }
 
 @end

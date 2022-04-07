@@ -152,7 +152,7 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
             selfRect.origin.x = rect.size.width / 2.0 + rect.origin.x - _bubbleWidth / 2.0;
         } else {
             //不在同一行
-            selfRect.origin.x = (rect.size.width - cursorStartRect.origin.x) / 2.0 + cursorStartRect.origin.x - _bubbleWidth / 2.0;
+            selfRect.origin.x = (rect.origin.x + rect.size.width - cursorStartRect.origin.x) / 2.0 + cursorStartRect.origin.x - _bubbleWidth / 2.0;
         }
     }
     if (selfRect.origin.x < _bubbleLeftMargin) {
@@ -174,7 +174,7 @@ typedef NS_OPTIONS(NSUInteger, JYBubbleMenuViewDirectionPriorityType) {
             arrowRect.origin.x = rect.origin.x + rect.size.width / 2.0 - selfRect.origin.x - _arrowWidth / 2.0;
         } else {
             // 如果不是在同一行，需要按照光标位置计算箭头位置。
-            arrowRect.origin.x = (rect.size.width - cursorStartRect.origin.x) / 2.0 + cursorStartRect.origin.x - _arrowWidth / 2.0 - selfRect.origin.x;
+            arrowRect.origin.x = (rect.origin.x + rect.size.width - cursorStartRect.origin.x) / 2.0 + cursorStartRect.origin.x - _arrowWidth / 2.0 - selfRect.origin.x;
         }
         //判断如果超出menuView的最右边，让其等于最右边。5是cornerRadius
         if (arrowRect.origin.x > selfRect.size.width - 5 - _arrowWidth) {

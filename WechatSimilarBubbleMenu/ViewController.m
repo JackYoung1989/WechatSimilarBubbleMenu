@@ -113,6 +113,7 @@
 //    _selectedTopView.frame = resultRect;
     
     CGRect tempRect = [_serviceContentTextView convertRect:resultRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
+    CGRect cursorStartRectToWindow = [_serviceContentTextView convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
     
     NSMutableArray *array = [[NSMutableArray alloc] init];
     
@@ -143,7 +144,7 @@
                 [array addObject:model];
             }
             
-            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:startRect selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
+            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
                 [self.serviceContentTextView hideTextSelection];
                 [JYBubbleMenuView.shareMenuView removeFromSuperview];
                 [self alertWithTitle:selectTitle];
@@ -169,7 +170,7 @@
                 
                 [array addObject:model];
             }
-            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:startRect selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
+            [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
                 [self.serviceContentTextView hideTextSelection];
                 [JYBubbleMenuView.shareMenuView removeFromSuperview];
                 [self alertWithTitle:selectTitle];

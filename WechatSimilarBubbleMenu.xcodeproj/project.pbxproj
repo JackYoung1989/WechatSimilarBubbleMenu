@@ -295,6 +295,7 @@
 				DEVELOPMENT_TEAM = KN75MKGNRX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WechatSimilarBubbleMenu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "仿微信气泡";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -321,6 +322,7 @@
 				DEVELOPMENT_TEAM = KN75MKGNRX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WechatSimilarBubbleMenu/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "仿微信气泡";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

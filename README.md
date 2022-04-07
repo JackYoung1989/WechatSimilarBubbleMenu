@@ -11,3 +11,7 @@ iOS仿微信聊天页面长按气泡弹窗，wechat similar bubble menu
 将代码拉下来，将JYBubbleButtonModel、JYBubbleMenuView、JYTextView三个类添加到您的工程中，然后将原来显示聊天内容的textView继承JYTextView即可。
 
 如果代码帮到了您，请帮我点一个小星星✨，谢谢
+
+![效果](https://img-blog.csdnimg.cn/6cbebc191ebe406d9d12bfcdcec5d63b.gif)
+
+<iframe height=222 width=480 src="https://img-blog.csdnimg.cn/6cbebc191ebe406d9d12bfcdcec5d63b.gif">

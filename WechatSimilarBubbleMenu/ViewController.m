@@ -43,6 +43,7 @@
     _serviceContentTextView = [[JYTextView alloc] initWithFrame:CGRectMake(nameLabel.frame.origin.x, nameLabel.frame.origin.y + nameLabel.frame.size.height + 5, 260, 200)];
     _serviceContentTextView.text = @"If this demo helps you,please give me a buling buling star,thanks!!! \n\nJackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy! JackYoung is a good boy!";
     [self.view addSubview:_serviceContentTextView];
+    _serviceContentTextView.fatherViewController = self;
     
     [((AppDelegate*)([UIApplication sharedApplication].delegate)).window addSubview:[JYBubbleMenuView shareMenuView]];
 }
@@ -56,21 +57,6 @@
     if ([scrollView isKindOfClass:[UITextView class]]) {
         [JYBubbleMenuView.shareMenuView removeFromSuperview];
     }
-}
-
-- (void)alertWithTitle:(NSString *)title {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提醒" message:title preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okAlert = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    UIAlertAction *cancelAlert = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    [alertController addAction:okAlert];
-    [alertController addAction:cancelAlert];
-    [self presentViewController:alertController animated:true completion:^{
-            
-    }];
 }
 
 @end

@@ -129,7 +129,7 @@
             [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
                 [self hideTextSelection];
                 [JYBubbleMenuView.shareMenuView removeFromSuperview];
-//                [self alertWithTitle:selectTitle];
+                [self alertWithTitle:selectTitle];
             }];
         } else {
             
@@ -155,13 +155,32 @@
             [[JYBubbleMenuView shareMenuView] showViewWithButtonModels:array cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(NSString * _Nonnull selectTitle) {
                 [self hideTextSelection];
                 [JYBubbleMenuView.shareMenuView removeFromSuperview];
-//                [self alertWithTitle:selectTitle];
+                [self alertWithTitle:selectTitle];
             }];
         }
     } else {
         //隐藏
         [[JYBubbleMenuView shareMenuView] removeFromSuperview];
     }
+}
+
+
+- (void)alertWithTitle:(NSString *)title {
+    if (_fatherViewController == nil) {
+        return;
+    }
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提醒" message:title preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAlert = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    UIAlertAction *cancelAlert = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertController addAction:okAlert];
+    [alertController addAction:cancelAlert];
+    [_fatherViewController presentViewController:alertController animated:true completion:^{
+            
+    }];
 }
 
 @end

@@ -1,7 +1,7 @@
 # iOS仿微信聊天页面长按气泡弹窗，wechat similar bubble or popup menu
 
-![效果](https://img-blog.csdnimg.cn/446b728e230248a7870cf1978b1b273a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeWFuZ2ppZXNlYWd1bGw=,size_20,color_FFFFFF,t_70,g_se,x_16){:width="585px" height="565px"}
-
+![效果](https://img-blog.csdnimg.cn/446b728e230248a7870cf1978b1b273a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeWFuZ2ppZXNlYWd1bGw=,size_20,color_FFFFFF,t_70,g_se,x_16){:height="50%" width="50%"}
+ 
 显示效果图如上，👇下面有gif
 
 ## ⏰‼️‼️如何使用？
